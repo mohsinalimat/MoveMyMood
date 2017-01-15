@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		460348188DA2348AF6EC2830 /* Pods_Postnatal_Depression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3AF8FDB51DA0E9D2E8AD38 /* Pods_Postnatal_Depression.framework */; };
+		5E1BB5031E040D9C005B933F /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BB5011E040D9C005B933F /* NormalCell.xib */; };
+		5E1BB5041E040D9C005B933F /* ValuePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BB5021E040D9C005B933F /* ValuePickerCell.xib */; };
+		5E1BB5061E040DA6005B933F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BB5051E040DA6005B933F /* CustomCell.swift */; };
+		5E58EC8A1E05544400AF3ADC /* RateActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */; };
+		5E58EC8E1E055BC700AF3ADC /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58EC8D1E055BC700AF3ADC /* RateTableViewCell.swift */; };
+		5E6472761E0BE9DD00FBF049 /* ActivityLandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6472751E0BE9DD00FBF049 /* ActivityLandingVC.swift */; };
+		5E6CD5BF1E02B50D00730CD0 /* MainCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */; };
+		5E6CD5C11E02BF2100730CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6CD5C01E02BF2100730CD0 /* Images.xcassets */; };
+		5E6CD5C41E02C11400730CD0 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6CD5C31E02C11400730CD0 /* CategoryTableViewCell.swift */; };
+		5E84FC5A1E1BE00000AFF73B /* ListActivityRatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */; };
+		5E84FC5C1E1BE23D00AFF73B /* RateListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC5B1E1BE23D00AFF73B /* RateListTableViewCell.swift */; };
+		5E84FC5F1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */; };
+		5E9F2C7C1E1E770200971C6D /* CustomAlertViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F2C7A1E1E770200971C6D /* CustomAlertViewVC.swift */; };
+		5E9F2C7D1E1E770200971C6D /* CustomAlertViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F2C7B1E1E770200971C6D /* CustomAlertViewVC.xib */; };
+		5EAEB4B81E1D173C00766836 /* SomewhatLikelyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAEB4B71E1D173C00766836 /* SomewhatLikelyVC.swift */; };
+		5ECFCF001E1E51FE00801DA1 /* RateAlertViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFCEFE1E1E51FE00801DA1 /* RateAlertViewVC.swift */; };
+		5ECFCF011E1E51FE00801DA1 /* RateAlertViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFCEFF1E1E51FE00801DA1 /* RateAlertViewVC.xib */; };
+		5ED480671E1A5F8600C3FE15 /* HowAccomplishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED480661E1A5F8600C3FE15 /* HowAccomplishVC.swift */; };
+		5ED480691E1A5FAB00C3FE15 /* SelectAStartTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED480681E1A5FAB00C3FE15 /* SelectAStartTimeVC.swift */; };
+		5ED4806B1E1A5FC000C3FE15 /* SelectAEndTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4806A1E1A5FC000C3FE15 /* SelectAEndTimeVC.swift */; };
+		5ED4806D1E1A5FFA00C3FE15 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4806C1E1A5FFA00C3FE15 /* CongratsVC.swift */; };
+		5ED480701E1A6D9400C3FE15 /* GlobalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4806F1E1A6D9400C3FE15 /* GlobalUtils.swift */; };
+		5ED480721E1A74D700C3FE15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED480711E1A74D700C3FE15 /* Extensions.swift */; };
+		DA4E88FC1E257B7A00137796 /* AlertTitleOnlyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E88F61E257B7A00137796 /* AlertTitleOnlyVC.swift */; };
+		DA4E88FD1E257B7A00137796 /* AlertTitleOnlyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E88F71E257B7A00137796 /* AlertTitleOnlyVC.xib */; };
+		DA4E88FE1E257B7A00137796 /* AlertSubtitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E88F81E257B7A00137796 /* AlertSubtitleVC.swift */; };
+		DA4E88FF1E257B7A00137796 /* AlertSubtitleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E88F91E257B7A00137796 /* AlertSubtitleVC.xib */; };
+		DA4E89001E257B7A00137796 /* AlertSubtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E88FA1E257B7A00137796 /* AlertSubtext.swift */; };
+		DA4E89011E257B7A00137796 /* AlertSubtext.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E88FB1E257B7A00137796 /* AlertSubtext.xib */; };
+		DA4E89031E2B0EF400137796 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4E89021E2B0EF400137796 /* iTunesArtwork@3x.png */; };
+		DA7C7A191E00DBC400F2DC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A181E00DBC400F2DC7C /* AppDelegate.swift */; };
+		DA7C7A1B1E00DBC400F2DC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A1A1E00DBC400F2DC7C /* ViewController.swift */; };
+		DA7C7A1E1E00DBC400F2DC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A1C1E00DBC400F2DC7C /* Main.storyboard */; };
+		DA7C7A211E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A1F1E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodeld */; };
+		DA7C7A231E00DBC400F2DC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A221E00DBC400F2DC7C /* Assets.xcassets */; };
+		DA7C7A261E00DBC400F2DC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A241E00DBC400F2DC7C /* LaunchScreen.storyboard */; };
+		DA7C7A311E00DBC400F2DC7C /* Postnatal_DepressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A301E00DBC400F2DC7C /* Postnatal_DepressionTests.swift */; };
+		DA7C7A3C1E00DBC400F2DC7C /* Postnatal_DepressionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A3B1E00DBC400F2DC7C /* Postnatal_DepressionUITests.swift */; };
+		DA7C7A4A1E00E27300F2DC7C /* ScoreQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A491E00E27300F2DC7C /* ScoreQuestionsViewController.swift */; };
+		DA7C7A4D1E00E91D00F2DC7C /* Landing.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A4C1E00E91D00F2DC7C /* Landing.png */; };
+		DA7C7A4F1E00EA0900F2DC7C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A4E1E00EA0900F2DC7C /* LandingViewController.swift */; };
+		DA7C7A511E00EA2F00F2DC7C /* Reminder1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A501E00EA2F00F2DC7C /* Reminder1ViewController.swift */; };
+		DA7C7A531E00EA4000F2DC7C /* Reminder2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A521E00EA4000F2DC7C /* Reminder2ViewController.swift */; };
+		DA7C7A561E00EAB300F2DC7C /* Reminder1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A541E00EAB300F2DC7C /* Reminder1.png */; };
+		DA7C7A571E00EAB300F2DC7C /* Reminder2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A551E00EAB300F2DC7C /* Reminder2.png */; };
+		DA7C7A591E00EBF300F2DC7C /* GetStarted.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A581E00EBF300F2DC7C /* GetStarted.png */; };
+		DA7C7A5B1E0108E300F2DC7C /* ReminderCopy.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A5A1E0108E300F2DC7C /* ReminderCopy.png */; };
+		DA7C7A5D1E010B0000F2DC7C /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A5C1E010B0000F2DC7C /* ReminderViewController.swift */; };
+		DA7C7A5F1E010C4A00F2DC7C /* ReminderNext.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A5E1E010C4A00F2DC7C /* ReminderNext.png */; };
+		DA7C7A611E010C5B00F2DC7C /* ReminderNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A601E010C5B00F2DC7C /* ReminderNextViewController.swift */; };
+		DA7C7A651E010CF000F2DC7C /* NextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A641E010CF000F2DC7C /* NextButton.png */; };
+		DA7C7A671E01111300F2DC7C /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A661E01111300F2DC7C /* LicenseViewController.swift */; };
+		DA7C7A691E0111CA00F2DC7C /* LicenseBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A681E0111CA00F2DC7C /* LicenseBackground.png */; };
+		DA7C7A6B1E01144500F2DC7C /* ContinueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A6A1E01144500F2DC7C /* ContinueButton.png */; };
+		DA7C7A6D1E0117AF00F2DC7C /* Question1Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A6C1E0117AF00F2DC7C /* Question1Background.png */; };
+		DA7C7A6F1E01183100F2DC7C /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A6E1E01183100F2DC7C /* BackButton.png */; };
+		DA7C7A711E01195000F2DC7C /* ScoreQuestion2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A701E01195000F2DC7C /* ScoreQuestion2ViewController.swift */; };
+		DA7C7A731E01195D00F2DC7C /* ScoreQuestion3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A721E01195D00F2DC7C /* ScoreQuestion3ViewController.swift */; };
+		DA7C7A751E01196400F2DC7C /* ScoreQuestion4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A741E01196400F2DC7C /* ScoreQuestion4ViewController.swift */; };
+		DA7C7A771E01196900F2DC7C /* ScoreQuestion5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A761E01196900F2DC7C /* ScoreQuestion5ViewController.swift */; };
+		DA7C7A791E01196F00F2DC7C /* ScoreQuestion6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A781E01196F00F2DC7C /* ScoreQuestion6ViewController.swift */; };
+		DA7C7A7B1E01197400F2DC7C /* ScoreQuestion7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A7A1E01197400F2DC7C /* ScoreQuestion7ViewController.swift */; };
+		DA7C7A7D1E01197A00F2DC7C /* ScoreQuestion8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A7C1E01197A00F2DC7C /* ScoreQuestion8ViewController.swift */; };
+		DA7C7A7F1E01197F00F2DC7C /* ScoreQuestion9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A7E1E01197F00F2DC7C /* ScoreQuestion9ViewController.swift */; };
+		DA7C7A811E01199500F2DC7C /* ScoreQuestion10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A801E01199500F2DC7C /* ScoreQuestion10ViewController.swift */; };
+		DA7C7A841E011C7800F2DC7C /* GreyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A831E011C7800F2DC7C /* GreyButton.png */; };
+		DA7C7A871E0122D800F2DC7C /* Question2Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7A861E0122D800F2DC7C /* Question2Background.png */; };
+		DA7C7A891E01265400F2DC7C /* ScoreQuestion11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7A881E01265400F2DC7C /* ScoreQuestion11ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7C7A2D1E00DBC400F2DC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7C7A0D1E00DBC400F2DC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7C7A141E00DBC400F2DC7C;
+			remoteInfo = "Postnatal Depression";
+		};
+		DA7C7A381E00DBC400F2DC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7C7A0D1E00DBC400F2DC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7C7A141E00DBC400F2DC7C;
+			remoteInfo = "Postnatal Depression";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E1BB5011E040D9C005B933F /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		5E1BB5021E040D9C005B933F /* ValuePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValuePickerCell.xib; sourceTree = "<group>"; };
+		5E1BB5051E040DA6005B933F /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateActivitiesVC.swift; sourceTree = "<group>"; };
+		5E58EC8D1E055BC700AF3ADC /* RateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		5E6472751E0BE9DD00FBF049 /* ActivityLandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLandingVC.swift; sourceTree = "<group>"; };
+		5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategoryVC.swift; sourceTree = "<group>"; };
+		5E6CD5C01E02BF2100730CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E6CD5C31E02C11400730CD0 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityRatesVC.swift; sourceTree = "<group>"; };
+		5E84FC5B1E1BE23D00AFF73B /* RateListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateListTableViewCell.swift; sourceTree = "<group>"; };
+		5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccomplishUnlikelyVC.swift; sourceTree = "<group>"; };
+		5E9F2C7A1E1E770200971C6D /* CustomAlertViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewVC.swift; sourceTree = "<group>"; };
+		5E9F2C7B1E1E770200971C6D /* CustomAlertViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertViewVC.xib; sourceTree = "<group>"; };
+		5EAEB4B71E1D173C00766836 /* SomewhatLikelyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomewhatLikelyVC.swift; sourceTree = "<group>"; };
+		5ECFCEFE1E1E51FE00801DA1 /* RateAlertViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAlertViewVC.swift; sourceTree = "<group>"; };
+		5ECFCEFF1E1E51FE00801DA1 /* RateAlertViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateAlertViewVC.xib; sourceTree = "<group>"; };
+		5ED480661E1A5F8600C3FE15 /* HowAccomplishVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowAccomplishVC.swift; sourceTree = "<group>"; };
+		5ED480681E1A5FAB00C3FE15 /* SelectAStartTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAStartTimeVC.swift; sourceTree = "<group>"; };
+		5ED4806A1E1A5FC000C3FE15 /* SelectAEndTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAEndTimeVC.swift; sourceTree = "<group>"; };
+		5ED4806C1E1A5FFA00C3FE15 /* CongratsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
+		5ED4806F1E1A6D9400C3FE15 /* GlobalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalUtils.swift; sourceTree = "<group>"; };
+		5ED480711E1A74D700C3FE15 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6A3AF8FDB51DA0E9D2E8AD38 /* Pods_Postnatal_Depression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Postnatal_Depression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB666033EA2DD32334F3FA6C /* Pods-Postnatal Depression.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postnatal Depression.release.xcconfig"; path = "Pods/Target Support Files/Pods-Postnatal Depression/Pods-Postnatal Depression.release.xcconfig"; sourceTree = "<group>"; };
+		DA4E88F61E257B7A00137796 /* AlertTitleOnlyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTitleOnlyVC.swift; sourceTree = "<group>"; };
+		DA4E88F71E257B7A00137796 /* AlertTitleOnlyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertTitleOnlyVC.xib; sourceTree = "<group>"; };
+		DA4E88F81E257B7A00137796 /* AlertSubtitleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSubtitleVC.swift; sourceTree = "<group>"; };
+		DA4E88F91E257B7A00137796 /* AlertSubtitleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertSubtitleVC.xib; sourceTree = "<group>"; };
+		DA4E88FA1E257B7A00137796 /* AlertSubtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSubtext.swift; sourceTree = "<group>"; };
+		DA4E88FB1E257B7A00137796 /* AlertSubtext.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertSubtext.xib; sourceTree = "<group>"; };
+		DA4E89021E2B0EF400137796 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		DA7C7A151E00DBC400F2DC7C /* Postnatal Depression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Postnatal Depression.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C7A181E00DBC400F2DC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA7C7A1A1E00DBC400F2DC7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A1D1E00DBC400F2DC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA7C7A201E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Postnatal_Depression.xcdatamodel; sourceTree = "<group>"; };
+		DA7C7A221E00DBC400F2DC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA7C7A251E00DBC400F2DC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA7C7A271E00DBC400F2DC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7C7A2C1E00DBC400F2DC7C /* Postnatal DepressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Postnatal DepressionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C7A301E00DBC400F2DC7C /* Postnatal_DepressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postnatal_DepressionTests.swift; sourceTree = "<group>"; };
+		DA7C7A321E00DBC400F2DC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7C7A371E00DBC400F2DC7C /* Postnatal DepressionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Postnatal DepressionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C7A3B1E00DBC400F2DC7C /* Postnatal_DepressionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postnatal_DepressionUITests.swift; sourceTree = "<group>"; };
+		DA7C7A3D1E00DBC400F2DC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7C7A491E00E27300F2DC7C /* ScoreQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestionsViewController.swift; sourceTree = "<group>"; };
+		DA7C7A4C1E00E91D00F2DC7C /* Landing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Landing.png; sourceTree = "<group>"; };
+		DA7C7A4E1E00EA0900F2DC7C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		DA7C7A501E00EA2F00F2DC7C /* Reminder1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder1ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A521E00EA4000F2DC7C /* Reminder2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder2ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A541E00EAB300F2DC7C /* Reminder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reminder1.png; sourceTree = "<group>"; };
+		DA7C7A551E00EAB300F2DC7C /* Reminder2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reminder2.png; sourceTree = "<group>"; };
+		DA7C7A581E00EBF300F2DC7C /* GetStarted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetStarted.png; sourceTree = "<group>"; };
+		DA7C7A5A1E0108E300F2DC7C /* ReminderCopy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReminderCopy.png; sourceTree = "<group>"; };
+		DA7C7A5C1E010B0000F2DC7C /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		DA7C7A5E1E010C4A00F2DC7C /* ReminderNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReminderNext.png; sourceTree = "<group>"; };
+		DA7C7A601E010C5B00F2DC7C /* ReminderNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderNextViewController.swift; sourceTree = "<group>"; };
+		DA7C7A641E010CF000F2DC7C /* NextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton.png; sourceTree = "<group>"; };
+		DA7C7A661E01111300F2DC7C /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
+		DA7C7A681E0111CA00F2DC7C /* LicenseBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LicenseBackground.png; sourceTree = "<group>"; };
+		DA7C7A6A1E01144500F2DC7C /* ContinueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContinueButton.png; sourceTree = "<group>"; };
+		DA7C7A6C1E0117AF00F2DC7C /* Question1Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question1Background.png; sourceTree = "<group>"; };
+		DA7C7A6E1E01183100F2DC7C /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		DA7C7A701E01195000F2DC7C /* ScoreQuestion2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion2ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A721E01195D00F2DC7C /* ScoreQuestion3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion3ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A741E01196400F2DC7C /* ScoreQuestion4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion4ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A761E01196900F2DC7C /* ScoreQuestion5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion5ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A781E01196F00F2DC7C /* ScoreQuestion6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion6ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A7A1E01197400F2DC7C /* ScoreQuestion7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion7ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A7C1E01197A00F2DC7C /* ScoreQuestion8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion8ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A7E1E01197F00F2DC7C /* ScoreQuestion9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion9ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A801E01199500F2DC7C /* ScoreQuestion10ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion10ViewController.swift; sourceTree = "<group>"; };
+		DA7C7A831E011C7800F2DC7C /* GreyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreyButton.png; sourceTree = "<group>"; };
+		DA7C7A861E0122D800F2DC7C /* Question2Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question2Background.png; sourceTree = "<group>"; };
+		DA7C7A881E01265400F2DC7C /* ScoreQuestion11ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreQuestion11ViewController.swift; sourceTree = "<group>"; };
+		E76FA6E404BFB9FFB4BECDB8 /* Pods-Postnatal Depression.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postnatal Depression.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Postnatal Depression/Pods-Postnatal Depression.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7C7A121E00DBC400F2DC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460348188DA2348AF6EC2830 /* Pods_Postnatal_Depression.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C7A291E00DBC400F2DC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C7A341E00DBC400F2DC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50B3717977D464A2365EA715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A3AF8FDB51DA0E9D2E8AD38 /* Pods_Postnatal_Depression.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581D9FCEB829E0C8D4775452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E76FA6E404BFB9FFB4BECDB8 /* Pods-Postnatal Depression.debug.xcconfig */,
+				BB666033EA2DD32334F3FA6C /* Pods-Postnatal Depression.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E6CD5BB1E02B48900730CD0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5E6CD5C21E02C0D900730CD0 /* Tableview Cell */,
+				5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */,
+				5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */,
+				5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */,
+				5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */,
+				5EAEB4B71E1D173C00766836 /* SomewhatLikelyVC.swift */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		5E6CD5C21E02C0D900730CD0 /* Tableview Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5E6CD5C31E02C11400730CD0 /* CategoryTableViewCell.swift */,
+				5E58EC8D1E055BC700AF3ADC /* RateTableViewCell.swift */,
+				5E84FC5B1E1BE23D00AFF73B /* RateListTableViewCell.swift */,
+				5E1BB5011E040D9C005B933F /* NormalCell.xib */,
+				5E1BB5021E040D9C005B933F /* ValuePickerCell.xib */,
+				5E1BB5051E040DA6005B933F /* CustomCell.swift */,
+			);
+			name = "Tableview Cell";
+			sourceTree = "<group>";
+		};
+		5ECFCEFD1E1E51D400801DA1 /* Custom AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				5ECFCEFE1E1E51FE00801DA1 /* RateAlertViewVC.swift */,
+				5ECFCEFF1E1E51FE00801DA1 /* RateAlertViewVC.xib */,
+				5E9F2C7A1E1E770200971C6D /* CustomAlertViewVC.swift */,
+				5E9F2C7B1E1E770200971C6D /* CustomAlertViewVC.xib */,
+				DA4E88F61E257B7A00137796 /* AlertTitleOnlyVC.swift */,
+				DA4E88F71E257B7A00137796 /* AlertTitleOnlyVC.xib */,
+				DA4E88F81E257B7A00137796 /* AlertSubtitleVC.swift */,
+				DA4E88F91E257B7A00137796 /* AlertSubtitleVC.xib */,
+				DA4E88FA1E257B7A00137796 /* AlertSubtext.swift */,
+				DA4E88FB1E257B7A00137796 /* AlertSubtext.xib */,
+			);
+			name = "Custom AlertView";
+			sourceTree = "<group>";
+		};
+		5ED480631E1A5F0B00C3FE15 /* Local Notification - Part3 */ = {
+			isa = PBXGroup;
+			children = (
+				5ED480661E1A5F8600C3FE15 /* HowAccomplishVC.swift */,
+				5ED480681E1A5FAB00C3FE15 /* SelectAStartTimeVC.swift */,
+				5ED4806A1E1A5FC000C3FE15 /* SelectAEndTimeVC.swift */,
+				5ED4806C1E1A5FFA00C3FE15 /* CongratsVC.swift */,
+			);
+			name = "Local Notification - Part3";
+			sourceTree = "<group>";
+		};
+		5ED4806E1E1A6D7200C3FE15 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5ED480711E1A74D700C3FE15 /* Extensions.swift */,
+				5ED4806F1E1A6D9400C3FE15 /* GlobalUtils.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		DA7C7A0C1E00DBC400F2DC7C = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A171E00DBC400F2DC7C /* Postnatal Depression */,
+				DA7C7A2F1E00DBC400F2DC7C /* Postnatal DepressionTests */,
+				DA7C7A3A1E00DBC400F2DC7C /* Postnatal DepressionUITests */,
+				DA7C7A161E00DBC400F2DC7C /* Products */,
+				581D9FCEB829E0C8D4775452 /* Pods */,
+				50B3717977D464A2365EA715 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7C7A161E00DBC400F2DC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A151E00DBC400F2DC7C /* Postnatal Depression.app */,
+				DA7C7A2C1E00DBC400F2DC7C /* Postnatal DepressionTests.xctest */,
+				DA7C7A371E00DBC400F2DC7C /* Postnatal DepressionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7C7A171E00DBC400F2DC7C /* Postnatal Depression */ = {
+			isa = PBXGroup;
+			children = (
+				5ECFCEFD1E1E51D400801DA1 /* Custom AlertView */,
+				5ED4806E1E1A6D7200C3FE15 /* Utility */,
+				DA7C7A181E00DBC400F2DC7C /* AppDelegate.swift */,
+				DA7C7A1A1E00DBC400F2DC7C /* ViewController.swift */,
+				DA7C7A851E011F5200F2DC7C /* Initial 4 Screens */,
+				5E6CD5BB1E02B48900730CD0 /* Categories */,
+				5ED480631E1A5F0B00C3FE15 /* Local Notification - Part3 */,
+				DA7C7A821E01199D00F2DC7C /* Scores */,
+				DA7C7A5C1E010B0000F2DC7C /* ReminderViewController.swift */,
+				DA7C7A601E010C5B00F2DC7C /* ReminderNextViewController.swift */,
+				5E6472751E0BE9DD00FBF049 /* ActivityLandingVC.swift */,
+				DA7C7A1C1E00DBC400F2DC7C /* Main.storyboard */,
+				DA7C7A221E00DBC400F2DC7C /* Assets.xcassets */,
+				DA7C7A241E00DBC400F2DC7C /* LaunchScreen.storyboard */,
+				DA7C7A271E00DBC400F2DC7C /* Info.plist */,
+				DA7C7A1F1E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodeld */,
+				DA7C7A4B1E00E90D00F2DC7C /* Pictures */,
+				5E6CD5C01E02BF2100730CD0 /* Images.xcassets */,
+			);
+			path = "Postnatal Depression";
+			sourceTree = "<group>";
+		};
+		DA7C7A2F1E00DBC400F2DC7C /* Postnatal DepressionTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A301E00DBC400F2DC7C /* Postnatal_DepressionTests.swift */,
+				DA7C7A321E00DBC400F2DC7C /* Info.plist */,
+			);
+			path = "Postnatal DepressionTests";
+			sourceTree = "<group>";
+		};
+		DA7C7A3A1E00DBC400F2DC7C /* Postnatal DepressionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A3B1E00DBC400F2DC7C /* Postnatal_DepressionUITests.swift */,
+				DA7C7A3D1E00DBC400F2DC7C /* Info.plist */,
+			);
+			path = "Postnatal DepressionUITests";
+			sourceTree = "<group>";
+		};
+		DA7C7A4B1E00E90D00F2DC7C /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A5A1E0108E300F2DC7C /* ReminderCopy.png */,
+				DA7C7A6C1E0117AF00F2DC7C /* Question1Background.png */,
+				DA7C7A861E0122D800F2DC7C /* Question2Background.png */,
+				DA7C7A4C1E00E91D00F2DC7C /* Landing.png */,
+				DA7C7A831E011C7800F2DC7C /* GreyButton.png */,
+				DA4E89021E2B0EF400137796 /* iTunesArtwork@3x.png */,
+				DA7C7A6A1E01144500F2DC7C /* ContinueButton.png */,
+				DA7C7A541E00EAB300F2DC7C /* Reminder1.png */,
+				DA7C7A6E1E01183100F2DC7C /* BackButton.png */,
+				DA7C7A641E010CF000F2DC7C /* NextButton.png */,
+				DA7C7A551E00EAB300F2DC7C /* Reminder2.png */,
+				DA7C7A681E0111CA00F2DC7C /* LicenseBackground.png */,
+				DA7C7A581E00EBF300F2DC7C /* GetStarted.png */,
+				DA7C7A5E1E010C4A00F2DC7C /* ReminderNext.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		DA7C7A821E01199D00F2DC7C /* Scores */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A491E00E27300F2DC7C /* ScoreQuestionsViewController.swift */,
+				DA7C7A701E01195000F2DC7C /* ScoreQuestion2ViewController.swift */,
+				DA7C7A721E01195D00F2DC7C /* ScoreQuestion3ViewController.swift */,
+				DA7C7A741E01196400F2DC7C /* ScoreQuestion4ViewController.swift */,
+				DA7C7A761E01196900F2DC7C /* ScoreQuestion5ViewController.swift */,
+				DA7C7A781E01196F00F2DC7C /* ScoreQuestion6ViewController.swift */,
+				DA7C7A7A1E01197400F2DC7C /* ScoreQuestion7ViewController.swift */,
+				DA7C7A7C1E01197A00F2DC7C /* ScoreQuestion8ViewController.swift */,
+				DA7C7A7E1E01197F00F2DC7C /* ScoreQuestion9ViewController.swift */,
+				DA7C7A801E01199500F2DC7C /* ScoreQuestion10ViewController.swift */,
+				DA7C7A881E01265400F2DC7C /* ScoreQuestion11ViewController.swift */,
+			);
+			name = Scores;
+			sourceTree = "<group>";
+		};
+		DA7C7A851E011F5200F2DC7C /* Initial 4 Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C7A661E01111300F2DC7C /* LicenseViewController.swift */,
+				DA7C7A4E1E00EA0900F2DC7C /* LandingViewController.swift */,
+				DA7C7A501E00EA2F00F2DC7C /* Reminder1ViewController.swift */,
+				DA7C7A521E00EA4000F2DC7C /* Reminder2ViewController.swift */,
+			);
+			name = "Initial 4 Screens";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7C7A141E00DBC400F2DC7C /* Postnatal Depression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C7A401E00DBC400F2DC7C /* Build configuration list for PBXNativeTarget "Postnatal Depression" */;
+			buildPhases = (
+				B28E39D2584AC473692D3E2C /* [CP] Check Pods Manifest.lock */,
+				DA7C7A111E00DBC400F2DC7C /* Sources */,
+				DA7C7A121E00DBC400F2DC7C /* Frameworks */,
+				DA7C7A131E00DBC400F2DC7C /* Resources */,
+				AA08978940C296A990410447 /* [CP] Embed Pods Frameworks */,
+				5C131815D9D081B7C52950DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Postnatal Depression";
+			productName = "Postnatal Depression";
+			productReference = DA7C7A151E00DBC400F2DC7C /* Postnatal Depression.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA7C7A2B1E00DBC400F2DC7C /* Postnatal DepressionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C7A431E00DBC400F2DC7C /* Build configuration list for PBXNativeTarget "Postnatal DepressionTests" */;
+			buildPhases = (
+				DA7C7A281E00DBC400F2DC7C /* Sources */,
+				DA7C7A291E00DBC400F2DC7C /* Frameworks */,
+				DA7C7A2A1E00DBC400F2DC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7C7A2E1E00DBC400F2DC7C /* PBXTargetDependency */,
+			);
+			name = "Postnatal DepressionTests";
+			productName = "Postnatal DepressionTests";
+			productReference = DA7C7A2C1E00DBC400F2DC7C /* Postnatal DepressionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA7C7A361E00DBC400F2DC7C /* Postnatal DepressionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C7A461E00DBC400F2DC7C /* Build configuration list for PBXNativeTarget "Postnatal DepressionUITests" */;
+			buildPhases = (
+				DA7C7A331E00DBC400F2DC7C /* Sources */,
+				DA7C7A341E00DBC400F2DC7C /* Frameworks */,
+				DA7C7A351E00DBC400F2DC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7C7A391E00DBC400F2DC7C /* PBXTargetDependency */,
+			);
+			name = "Postnatal DepressionUITests";
+			productName = "Postnatal DepressionUITests";
+			productReference = DA7C7A371E00DBC400F2DC7C /* Postnatal DepressionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7C7A0D1E00DBC400F2DC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Harloch;
+				TargetAttributes = {
+					DA7C7A141E00DBC400F2DC7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2Y596VS88C;
+					};
+					DA7C7A2B1E00DBC400F2DC7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA7C7A141E00DBC400F2DC7C;
+					};
+					DA7C7A361E00DBC400F2DC7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA7C7A141E00DBC400F2DC7C;
+					};
+				};
+			};
+			buildConfigurationList = DA7C7A101E00DBC400F2DC7C /* Build configuration list for PBXProject "Postnatal Depression" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7C7A0C1E00DBC400F2DC7C;
+			productRefGroup = DA7C7A161E00DBC400F2DC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7C7A141E00DBC400F2DC7C /* Postnatal Depression */,
+				DA7C7A2B1E00DBC400F2DC7C /* Postnatal DepressionTests */,
+				DA7C7A361E00DBC400F2DC7C /* Postnatal DepressionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7C7A131E00DBC400F2DC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4E89011E257B7A00137796 /* AlertSubtext.xib in Resources */,
+				DA7C7A6F1E01183100F2DC7C /* BackButton.png in Resources */,
+				DA7C7A561E00EAB300F2DC7C /* Reminder1.png in Resources */,
+				DA7C7A261E00DBC400F2DC7C /* LaunchScreen.storyboard in Resources */,
+				DA7C7A591E00EBF300F2DC7C /* GetStarted.png in Resources */,
+				DA4E88FF1E257B7A00137796 /* AlertSubtitleVC.xib in Resources */,
+				DA4E89031E2B0EF400137796 /* iTunesArtwork@3x.png in Resources */,
+				5ECFCF011E1E51FE00801DA1 /* RateAlertViewVC.xib in Resources */,
+				5E1BB5031E040D9C005B933F /* NormalCell.xib in Resources */,
+				DA7C7A871E0122D800F2DC7C /* Question2Background.png in Resources */,
+				5E1BB5041E040D9C005B933F /* ValuePickerCell.xib in Resources */,
+				DA7C7A571E00EAB300F2DC7C /* Reminder2.png in Resources */,
+				DA7C7A5B1E0108E300F2DC7C /* ReminderCopy.png in Resources */,
+				DA7C7A231E00DBC400F2DC7C /* Assets.xcassets in Resources */,
+				DA7C7A651E010CF000F2DC7C /* NextButton.png in Resources */,
+				DA7C7A841E011C7800F2DC7C /* GreyButton.png in Resources */,
+				DA7C7A691E0111CA00F2DC7C /* LicenseBackground.png in Resources */,
+				5E6CD5C11E02BF2100730CD0 /* Images.xcassets in Resources */,
+				DA7C7A5F1E010C4A00F2DC7C /* ReminderNext.png in Resources */,
+				DA7C7A1E1E00DBC400F2DC7C /* Main.storyboard in Resources */,
+				DA7C7A6D1E0117AF00F2DC7C /* Question1Background.png in Resources */,
+				5E9F2C7D1E1E770200971C6D /* CustomAlertViewVC.xib in Resources */,
+				DA7C7A6B1E01144500F2DC7C /* ContinueButton.png in Resources */,
+				DA4E88FD1E257B7A00137796 /* AlertTitleOnlyVC.xib in Resources */,
+				DA7C7A4D1E00E91D00F2DC7C /* Landing.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C7A2A1E00DBC400F2DC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C7A351E00DBC400F2DC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C131815D9D081B7C52950DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Postnatal Depression/Pods-Postnatal Depression-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA08978940C296A990410447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Postnatal Depression/Pods-Postnatal Depression-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B28E39D2584AC473692D3E2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7C7A111E00DBC400F2DC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4E89001E257B7A00137796 /* AlertSubtext.swift in Sources */,
+				5E1BB5061E040DA6005B933F /* CustomCell.swift in Sources */,
+				DA7C7A511E00EA2F00F2DC7C /* Reminder1ViewController.swift in Sources */,
+				5ED4806B1E1A5FC000C3FE15 /* SelectAEndTimeVC.swift in Sources */,
+				DA7C7A811E01199500F2DC7C /* ScoreQuestion10ViewController.swift in Sources */,
+				DA7C7A1B1E00DBC400F2DC7C /* ViewController.swift in Sources */,
+				5E84FC5C1E1BE23D00AFF73B /* RateListTableViewCell.swift in Sources */,
+				DA7C7A791E01196F00F2DC7C /* ScoreQuestion6ViewController.swift in Sources */,
+				DA7C7A7B1E01197400F2DC7C /* ScoreQuestion7ViewController.swift in Sources */,
+				DA7C7A751E01196400F2DC7C /* ScoreQuestion4ViewController.swift in Sources */,
+				5ED480671E1A5F8600C3FE15 /* HowAccomplishVC.swift in Sources */,
+				DA7C7A7F1E01197F00F2DC7C /* ScoreQuestion9ViewController.swift in Sources */,
+				5E6CD5BF1E02B50D00730CD0 /* MainCategoryVC.swift in Sources */,
+				5ECFCF001E1E51FE00801DA1 /* RateAlertViewVC.swift in Sources */,
+				5ED480691E1A5FAB00C3FE15 /* SelectAStartTimeVC.swift in Sources */,
+				5E6472761E0BE9DD00FBF049 /* ActivityLandingVC.swift in Sources */,
+				DA7C7A191E00DBC400F2DC7C /* AppDelegate.swift in Sources */,
+				DA7C7A731E01195D00F2DC7C /* ScoreQuestion3ViewController.swift in Sources */,
+				5ED4806D1E1A5FFA00C3FE15 /* CongratsVC.swift in Sources */,
+				DA7C7A7D1E01197A00F2DC7C /* ScoreQuestion8ViewController.swift in Sources */,
+				DA7C7A611E010C5B00F2DC7C /* ReminderNextViewController.swift in Sources */,
+				DA7C7A531E00EA4000F2DC7C /* Reminder2ViewController.swift in Sources */,
+				DA4E88FE1E257B7A00137796 /* AlertSubtitleVC.swift in Sources */,
+				5E58EC8E1E055BC700AF3ADC /* RateTableViewCell.swift in Sources */,
+				DA7C7A211E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodeld in Sources */,
+				DA7C7A671E01111300F2DC7C /* LicenseViewController.swift in Sources */,
+				5ED480701E1A6D9400C3FE15 /* GlobalUtils.swift in Sources */,
+				DA7C7A771E01196900F2DC7C /* ScoreQuestion5ViewController.swift in Sources */,
+				DA7C7A711E01195000F2DC7C /* ScoreQuestion2ViewController.swift in Sources */,
+				5E6CD5C41E02C11400730CD0 /* CategoryTableViewCell.swift in Sources */,
+				5E58EC8A1E05544400AF3ADC /* RateActivitiesVC.swift in Sources */,
+				5EAEB4B81E1D173C00766836 /* SomewhatLikelyVC.swift in Sources */,
+				5ED480721E1A74D700C3FE15 /* Extensions.swift in Sources */,
+				5E84FC5F1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift in Sources */,
+				DA7C7A4F1E00EA0900F2DC7C /* LandingViewController.swift in Sources */,
+				5E9F2C7C1E1E770200971C6D /* CustomAlertViewVC.swift in Sources */,
+				DA7C7A5D1E010B0000F2DC7C /* ReminderViewController.swift in Sources */,
+				5E84FC5A1E1BE00000AFF73B /* ListActivityRatesVC.swift in Sources */,
+				DA7C7A4A1E00E27300F2DC7C /* ScoreQuestionsViewController.swift in Sources */,
+				DA7C7A891E01265400F2DC7C /* ScoreQuestion11ViewController.swift in Sources */,
+				DA4E88FC1E257B7A00137796 /* AlertTitleOnlyVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C7A281E00DBC400F2DC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7C7A311E00DBC400F2DC7C /* Postnatal_DepressionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C7A331E00DBC400F2DC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7C7A3C1E00DBC400F2DC7C /* Postnatal_DepressionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7C7A2E1E00DBC400F2DC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7C7A141E00DBC400F2DC7C /* Postnatal Depression */;
+			targetProxy = DA7C7A2D1E00DBC400F2DC7C /* PBXContainerItemProxy */;
+		};
+		DA7C7A391E00DBC400F2DC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7C7A141E00DBC400F2DC7C /* Postnatal Depression */;
+			targetProxy = DA7C7A381E00DBC400F2DC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7C7A1C1E00DBC400F2DC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7C7A1D1E00DBC400F2DC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA7C7A241E00DBC400F2DC7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7C7A251E00DBC400F2DC7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7C7A3E1E00DBC400F2DC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7C7A3F1E00DBC400F2DC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7C7A411E00DBC400F2DC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76FA6E404BFB9FFB4BECDB8 /* Pods-Postnatal Depression.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Postnatal Depression/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.MoveMyMood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DA7C7A421E00DBC400F2DC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB666033EA2DD32334F3FA6C /* Pods-Postnatal Depression.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Postnatal Depression/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.MoveMyMood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DA7C7A441E00DBC400F2DC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Postnatal DepressionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.Postnatal-DepressionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postnatal Depression.app/Postnatal Depression";
+			};
+			name = Debug;
+		};
+		DA7C7A451E00DBC400F2DC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Postnatal DepressionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.Postnatal-DepressionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postnatal Depression.app/Postnatal Depression";
+			};
+			name = Release;
+		};
+		DA7C7A471E00DBC400F2DC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Postnatal DepressionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.Postnatal-DepressionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Postnatal Depression";
+			};
+			name = Debug;
+		};
+		DA7C7A481E00DBC400F2DC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Postnatal DepressionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.Postnatal-DepressionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Postnatal Depression";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7C7A101E00DBC400F2DC7C /* Build configuration list for PBXProject "Postnatal Depression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C7A3E1E00DBC400F2DC7C /* Debug */,
+				DA7C7A3F1E00DBC400F2DC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7C7A401E00DBC400F2DC7C /* Build configuration list for PBXNativeTarget "Postnatal Depression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C7A411E00DBC400F2DC7C /* Debug */,
+				DA7C7A421E00DBC400F2DC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7C7A431E00DBC400F2DC7C /* Build configuration list for PBXNativeTarget "Postnatal DepressionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C7A441E00DBC400F2DC7C /* Debug */,
+				DA7C7A451E00DBC400F2DC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7C7A461E00DBC400F2DC7C /* Build configuration list for PBXNativeTarget "Postnatal DepressionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C7A471E00DBC400F2DC7C /* Debug */,
+				DA7C7A481E00DBC400F2DC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA7C7A1F1E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA7C7A201E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodel */,
+			);
+			currentVersion = DA7C7A201E00DBC400F2DC7C /* Postnatal_Depression.xcdatamodel */;
+			path = Postnatal_Depression.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA7C7A0D1E00DBC400F2DC7C /* Project object */;
+}
