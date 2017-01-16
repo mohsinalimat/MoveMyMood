@@ -957,12 +957,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="i8E-k9-orF">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i8E-k9-orF" secondAttribute="height" multiplier="8:7" id="lle-MO-FsP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9WK-C8-XQ9" firstAttribute="top" secondItem="UPO-nm-Syu" secondAttribute="bottom" constant="15" id="0HW-zW-4wl"/>
                             <constraint firstItem="0Wj-5v-8w6" firstAttribute="centerY" secondItem="9WK-C8-XQ9" secondAttribute="centerY" id="4yx-Vm-8SI"/>
                             <constraint firstItem="9WK-C8-XQ9" firstAttribute="centerX" secondItem="Baw-ra-Z5t" secondAttribute="centerX" id="7ne-DY-9zR"/>
+                            <constraint firstItem="i8E-k9-orF" firstAttribute="width" secondItem="J33-ku-vOS" secondAttribute="height" multiplier="40:667" id="9T5-Bt-GX2"/>
+                            <constraint firstItem="i8E-k9-orF" firstAttribute="top" secondItem="bn1-88-ZKS" secondAttribute="bottom" constant="4" id="A9J-4D-iNh"/>
                             <constraint firstItem="t0D-u9-MeI" firstAttribute="centerX" secondItem="H7P-IY-wsn" secondAttribute="centerX" id="AqG-ol-yKK"/>
                             <constraint firstItem="UBA-kE-y1h" firstAttribute="leading" secondItem="Baw-ra-Z5t" secondAttribute="leadingMargin" id="DDZ-vY-hbw"/>
                             <constraint firstItem="KvQ-wx-Yz9" firstAttribute="width" secondItem="J33-ku-vOS" secondAttribute="height" multiplier="265:667" id="DPs-E2-oNo"/>
@@ -974,6 +982,7 @@
                             <constraint firstItem="UPO-nm-Syu" firstAttribute="leading" secondItem="UBA-kE-y1h" secondAttribute="trailing" constant="25" id="JzJ-t2-VZJ"/>
                             <constraint firstItem="KvQ-wx-Yz9" firstAttribute="centerX" secondItem="Baw-ra-Z5t" secondAttribute="centerX" id="K0g-Wm-czD"/>
                             <constraint firstItem="4YU-iF-6nC" firstAttribute="centerX" secondItem="Baw-ra-Z5t" secondAttribute="centerX" id="L77-B2-Rf4"/>
+                            <constraint firstItem="i8E-k9-orF" firstAttribute="centerX" secondItem="Baw-ra-Z5t" secondAttribute="centerX" id="LSH-zh-U5o"/>
                             <constraint firstItem="H7P-IY-wsn" firstAttribute="centerX" secondItem="Baw-ra-Z5t" secondAttribute="centerX" id="U15-Mn-uaS"/>
                             <constraint firstItem="inY-ZQ-cQE" firstAttribute="centerY" secondItem="KvQ-wx-Yz9" secondAttribute="centerY" id="WJk-id-tZt"/>
                             <constraint firstItem="4YU-iF-6nC" firstAttribute="width" secondItem="J33-ku-vOS" secondAttribute="height" multiplier="265:667" id="WPl-kW-4b0"/>
@@ -1117,6 +1126,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uln-ZD-BXd">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1124,11 +1136,13 @@
                             <constraint firstItem="gRz-xr-7Xu" firstAttribute="width" secondItem="FAS-Gd-gKO" secondAttribute="height" multiplier="219:50" id="0zm-PG-szb"/>
                             <constraint firstItem="FAS-Gd-gKO" firstAttribute="width" secondItem="dM5-7f-vP8" secondAttribute="height" multiplier="265:667" id="2Kc-BE-nOy"/>
                             <constraint firstItem="YJg-gi-SeH" firstAttribute="width" secondItem="yD5-Ux-KHe" secondAttribute="height" multiplier="219:50" id="3JY-rg-4lt"/>
+                            <constraint firstItem="Uln-ZD-BXd" firstAttribute="width" secondItem="dM5-7f-vP8" secondAttribute="height" multiplier="40:667" id="3ed-b0-edj"/>
                             <constraint firstItem="N7J-a9-KYz" firstAttribute="centerX" secondItem="iYO-0S-cKW" secondAttribute="centerX" id="4ra-oo-kN5"/>
                             <constraint firstItem="nR7-Sf-3Fw" firstAttribute="width" secondItem="dM5-7f-vP8" secondAttribute="height" multiplier="14:667" id="6am-fD-If0"/>
                             <constraint firstItem="dM5-7f-vP8" firstAttribute="top" secondItem="iYO-0S-cKW" secondAttribute="topMargin" id="7fG-xx-7BF"/>
                             <constraint firstItem="6fz-4k-jGG" firstAttribute="width" secondItem="dM5-7f-vP8" secondAttribute="height" multiplier="265:667" id="7rq-73-Jhl"/>
                             <constraint firstItem="AVO-ZS-0sV" firstAttribute="centerY" secondItem="N7J-a9-KYz" secondAttribute="centerY" id="7yt-E8-dcW"/>
+                            <constraint firstItem="Uln-ZD-BXd" firstAttribute="width" secondItem="Uln-ZD-BXd" secondAttribute="height" multiplier="8:7" id="8PW-L8-Bcm"/>
                             <constraint firstItem="SHz-Tk-H8t" firstAttribute="leading" secondItem="nR7-Sf-3Fw" secondAttribute="trailing" constant="25" id="9eF-PP-dgV"/>
                             <constraint firstItem="FAS-Gd-gKO" firstAttribute="top" secondItem="SHz-Tk-H8t" secondAttribute="bottom" constant="15" id="Aph-RF-V9s"/>
                             <constraint firstItem="N7J-a9-KYz" firstAttribute="width" secondItem="dM5-7f-vP8" secondAttribute="height" multiplier="265:667" id="FJN-IR-Cmq"/>
@@ -1138,6 +1152,7 @@
                             <constraint firstItem="6fz-4k-jGG" firstAttribute="top" secondItem="FAS-Gd-gKO" secondAttribute="bottom" constant="8" id="RsJ-T5-Vxs"/>
                             <constraint firstItem="YJg-gi-SeH" firstAttribute="centerX" secondItem="yD5-Ux-KHe" secondAttribute="centerX" id="SZh-ZO-wcy"/>
                             <constraint firstItem="dM5-7f-vP8" firstAttribute="leading" secondItem="iYO-0S-cKW" secondAttribute="leadingMargin" constant="-20" id="UrJ-1r-ftv"/>
+                            <constraint firstItem="Uln-ZD-BXd" firstAttribute="centerX" secondItem="iYO-0S-cKW" secondAttribute="centerX" id="VzD-oH-c8V"/>
                             <constraint firstItem="nR7-Sf-3Fw" firstAttribute="leading" secondItem="iYO-0S-cKW" secondAttribute="leadingMargin" id="WwW-yh-Xow"/>
                             <constraint firstItem="AVO-ZS-0sV" firstAttribute="width" secondItem="N7J-a9-KYz" secondAttribute="height" multiplier="219:50" id="XOu-4R-H6F"/>
                             <constraint firstItem="AVO-ZS-0sV" firstAttribute="centerX" secondItem="N7J-a9-KYz" secondAttribute="centerX" id="XYT-aJ-ESZ"/>
@@ -1152,6 +1167,7 @@
                             <constraint firstItem="0Hn-gN-teC" firstAttribute="centerY" secondItem="6fz-4k-jGG" secondAttribute="centerY" id="rnt-wM-6mI"/>
                             <constraint firstItem="yD5-Ux-KHe" firstAttribute="width" secondItem="dM5-7f-vP8" secondAttribute="height" multiplier="265:667" id="tIg-7p-4xf"/>
                             <constraint firstItem="YJg-gi-SeH" firstAttribute="centerY" secondItem="yD5-Ux-KHe" secondAttribute="centerY" id="uVO-5D-9zd"/>
+                            <constraint firstItem="Uln-ZD-BXd" firstAttribute="top" secondItem="CfJ-Mr-VAk" secondAttribute="bottom" constant="4" id="y5m-qY-RwJ"/>
                             <constraint firstItem="nR7-Sf-3Fw" firstAttribute="top" secondItem="CfJ-Mr-VAk" secondAttribute="bottom" constant="8" id="yet-k8-77A"/>
                             <constraint firstItem="SHz-Tk-H8t" firstAttribute="top" secondItem="nR7-Sf-3Fw" secondAttribute="bottom" constant="35" id="yki-0U-8uj"/>
                         </constraints>
@@ -1277,6 +1293,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-ct-2sy">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1284,6 +1303,7 @@
                             <constraint firstItem="6Hm-Xc-Xnj" firstAttribute="centerY" secondItem="Gjv-MS-b3g" secondAttribute="centerY" id="1km-ek-eNB"/>
                             <constraint firstItem="dBb-1g-74r" firstAttribute="top" secondItem="Gjv-MS-b3g" secondAttribute="bottom" constant="8" id="1nd-la-d4s"/>
                             <constraint firstItem="X8M-2s-tUn" firstAttribute="width" secondItem="iuK-h3-5fT" secondAttribute="height" multiplier="14:667" id="3hP-Ms-kdP"/>
+                            <constraint firstItem="Ks2-ct-2sy" firstAttribute="width" secondItem="iuK-h3-5fT" secondAttribute="height" multiplier="40:667" id="3xY-qC-gJK"/>
                             <constraint firstItem="0i9-NX-xE6" firstAttribute="centerY" secondItem="TCP-SL-9ZW" secondAttribute="centerY" id="9F0-lc-4H5"/>
                             <constraint firstItem="dBb-1g-74r" firstAttribute="width" secondItem="iuK-h3-5fT" secondAttribute="height" multiplier="265:667" id="9Tn-ec-cnE"/>
                             <constraint firstItem="dBb-1g-74r" firstAttribute="centerX" secondItem="dgX-TX-xsf" secondAttribute="centerX" id="AKO-0d-h77"/>
@@ -1291,6 +1311,7 @@
                             <constraint firstItem="iEz-yi-GZF" firstAttribute="centerY" secondItem="mnN-I1-pNW" secondAttribute="centerY" id="C8z-Ap-9wb"/>
                             <constraint firstItem="Gjv-MS-b3g" firstAttribute="top" secondItem="mnN-I1-pNW" secondAttribute="bottom" constant="8" id="DA5-lg-bbr"/>
                             <constraint firstItem="eIO-sR-RiK" firstAttribute="leading" secondItem="X8M-2s-tUn" secondAttribute="trailing" constant="25" id="EpY-Bw-QP4"/>
+                            <constraint firstItem="Ks2-ct-2sy" firstAttribute="centerX" secondItem="dgX-TX-xsf" secondAttribute="centerX" id="H4s-fT-GdN"/>
                             <constraint firstItem="TCP-SL-9ZW" firstAttribute="width" secondItem="iuK-h3-5fT" secondAttribute="height" multiplier="265:667" id="HgM-gz-Nr7"/>
                             <constraint firstItem="X8M-2s-tUn" firstAttribute="top" secondItem="Z8y-cT-fQ0" secondAttribute="bottom" constant="8" id="Ih6-3S-IRl"/>
                             <constraint firstItem="Gjv-MS-b3g" firstAttribute="width" secondItem="iuK-h3-5fT" secondAttribute="height" multiplier="265:667" id="MaM-99-wFF"/>
@@ -1303,7 +1324,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="iuK-h3-5fT" secondAttribute="trailing" constant="-20" id="aWe-SB-B1V"/>
                             <constraint firstItem="iuK-h3-5fT" firstAttribute="leading" secondItem="dgX-TX-xsf" secondAttribute="leadingMargin" constant="-20" id="bCG-Ln-Y0n"/>
                             <constraint firstItem="TCP-SL-9ZW" firstAttribute="centerX" secondItem="dgX-TX-xsf" secondAttribute="centerX" id="fNd-yB-N33"/>
+                            <constraint firstItem="Ks2-ct-2sy" firstAttribute="width" secondItem="Ks2-ct-2sy" secondAttribute="height" multiplier="8:7" id="hT9-7r-luX"/>
                             <constraint firstItem="6Hm-Xc-Xnj" firstAttribute="width" secondItem="Gjv-MS-b3g" secondAttribute="height" multiplier="219:50" id="jBP-uv-9xE"/>
+                            <constraint firstItem="Ks2-ct-2sy" firstAttribute="top" secondItem="Z8y-cT-fQ0" secondAttribute="bottom" constant="4" id="mrd-RR-VPo"/>
                             <constraint firstItem="TCP-SL-9ZW" firstAttribute="top" secondItem="dBb-1g-74r" secondAttribute="bottom" constant="8" id="pUz-eb-CRi"/>
                             <constraint firstItem="mnN-I1-pNW" firstAttribute="top" secondItem="eIO-sR-RiK" secondAttribute="bottom" constant="15" id="qhL-wq-f9P"/>
                             <constraint firstItem="NtP-jr-dzu" firstAttribute="centerX" secondItem="dBb-1g-74r" secondAttribute="centerX" id="rBV-WM-U80"/>
@@ -1433,9 +1456,13 @@ cope at all</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="40W-mk-s0M">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="40W-mk-s0M" firstAttribute="width" secondItem="wPE-Fl-Tl8" secondAttribute="height" multiplier="40:667" id="0QD-GA-rPh"/>
                             <constraint firstItem="Y5F-XC-UF0" firstAttribute="width" secondItem="wPE-Fl-Tl8" secondAttribute="height" multiplier="265:667" id="20m-6p-ZnU"/>
                             <constraint firstItem="OyU-KP-9Ye" firstAttribute="centerX" secondItem="7S6-TW-eJ5" secondAttribute="centerX" id="30E-ae-8kS"/>
                             <constraint firstItem="sUc-fa-RHX" firstAttribute="centerY" secondItem="Y5F-XC-UF0" secondAttribute="centerY" id="4FD-BT-UJD"/>
@@ -1448,6 +1475,7 @@ cope at all</string>
                             <constraint firstItem="7S6-TW-eJ5" firstAttribute="centerX" secondItem="jmh-wb-yYK" secondAttribute="centerX" id="Dr7-U7-sUg"/>
                             <constraint firstItem="gdh-MT-crF" firstAttribute="centerX" secondItem="5qw-In-ZZm" secondAttribute="centerX" id="ES2-EJ-O6y"/>
                             <constraint firstItem="4Tm-AP-Wyh" firstAttribute="leading" secondItem="jmh-wb-yYK" secondAttribute="leadingMargin" id="F7a-mp-5ZZ"/>
+                            <constraint firstItem="40W-mk-s0M" firstAttribute="width" secondItem="40W-mk-s0M" secondAttribute="height" multiplier="8:7" id="G2F-cN-n9d"/>
                             <constraint firstItem="mf1-ox-udA" firstAttribute="top" secondItem="4Tm-AP-Wyh" secondAttribute="bottom" constant="35" id="Hz9-mM-9rS"/>
                             <constraint firstItem="mXU-oq-yBk" firstAttribute="centerY" secondItem="U8q-xv-6qf" secondAttribute="centerY" id="IPd-MV-n2h"/>
                             <constraint firstItem="4Tm-AP-Wyh" firstAttribute="width" secondItem="wPE-Fl-Tl8" secondAttribute="height" multiplier="14:667" id="Lat-YB-B8R"/>
@@ -1469,6 +1497,8 @@ cope at all</string>
                             <constraint firstItem="7S6-TW-eJ5" firstAttribute="width" secondItem="wPE-Fl-Tl8" secondAttribute="height" multiplier="265:667" id="rJD-cv-RB7"/>
                             <constraint firstItem="mf1-ox-udA" firstAttribute="width" secondItem="wPE-Fl-Tl8" secondAttribute="height" multiplier="265:667" id="uSX-6R-kwi"/>
                             <constraint firstItem="Y5F-XC-UF0" firstAttribute="centerX" secondItem="jmh-wb-yYK" secondAttribute="centerX" id="uZ4-yx-6A3"/>
+                            <constraint firstItem="40W-mk-s0M" firstAttribute="centerX" secondItem="jmh-wb-yYK" secondAttribute="centerX" id="wS7-Il-kce"/>
+                            <constraint firstItem="40W-mk-s0M" firstAttribute="top" secondItem="vdY-qg-akB" secondAttribute="bottom" constant="4" id="wmV-mL-QDd"/>
                             <constraint firstItem="OyU-KP-9Ye" firstAttribute="centerY" secondItem="7S6-TW-eJ5" secondAttribute="centerY" id="wvT-99-p2G"/>
                             <constraint firstItem="Vkf-84-Co9" firstAttribute="top" secondItem="wPE-Fl-Tl8" secondAttribute="bottom" id="xJd-Dt-z1V"/>
                             <constraint firstItem="wPE-Fl-Tl8" firstAttribute="leading" secondItem="jmh-wb-yYK" secondAttribute="leadingMargin" constant="-20" id="yxs-DF-LOg"/>
@@ -1595,6 +1625,12 @@ cope at all</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsE-so-dL3">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jsE-so-dL3" secondAttribute="height" multiplier="8:7" id="N4H-ga-L0g"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1613,10 +1649,12 @@ cope at all</string>
                             <constraint firstItem="RLu-fT-Jcu" firstAttribute="width" secondItem="1Q4-76-nRT" secondAttribute="height" multiplier="14:667" id="Pie-Yf-ctz"/>
                             <constraint firstItem="zvL-Az-ygO" firstAttribute="top" secondItem="ziy-wE-xMU" secondAttribute="bottom" constant="8" id="Q2f-Oj-r6K"/>
                             <constraint firstItem="QZk-ym-6ef" firstAttribute="centerY" secondItem="ziy-wE-xMU" secondAttribute="centerY" id="Qec-Mf-UIk"/>
+                            <constraint firstItem="jsE-so-dL3" firstAttribute="centerX" secondItem="O4a-9k-vMN" secondAttribute="centerX" id="T9F-gI-L7w"/>
                             <constraint firstItem="2FB-2Y-M4p" firstAttribute="width" secondItem="mo3-DH-cPJ" secondAttribute="height" multiplier="219:50" id="TJC-Ss-HtP"/>
                             <constraint firstItem="2FB-2Y-M4p" firstAttribute="centerY" secondItem="mo3-DH-cPJ" secondAttribute="centerY" id="To8-Bh-UJv"/>
                             <constraint firstItem="LGI-Qx-uaQ" firstAttribute="width" secondItem="H0Y-ka-m49" secondAttribute="height" multiplier="219:50" id="WVJ-nJ-uGq"/>
                             <constraint firstItem="RLu-fT-Jcu" firstAttribute="top" secondItem="5U4-gv-noL" secondAttribute="bottom" constant="8" id="ZBk-70-yQo"/>
+                            <constraint firstItem="jsE-so-dL3" firstAttribute="width" secondItem="1Q4-76-nRT" secondAttribute="height" multiplier="40:667" id="aja-C7-8Le"/>
                             <constraint firstItem="aoA-jt-ltl" firstAttribute="centerY" secondItem="zvL-Az-ygO" secondAttribute="centerY" id="blV-ji-gXp"/>
                             <constraint firstItem="ziy-wE-xMU" firstAttribute="top" secondItem="OZq-Dq-8i2" secondAttribute="bottom" constant="15" id="bok-Pc-c2O"/>
                             <constraint firstItem="mo3-DH-cPJ" firstAttribute="centerX" secondItem="O4a-9k-vMN" secondAttribute="centerX" id="cRM-qZ-eKZ"/>
@@ -1625,6 +1663,7 @@ cope at all</string>
                             <constraint firstItem="H0Y-ka-m49" firstAttribute="centerX" secondItem="O4a-9k-vMN" secondAttribute="centerX" id="eW8-Yh-v3A"/>
                             <constraint firstItem="LGI-Qx-uaQ" firstAttribute="centerX" secondItem="H0Y-ka-m49" secondAttribute="centerX" id="h1g-nM-qmf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Q4-76-nRT" secondAttribute="trailing" constant="-20" id="hUi-87-y1m"/>
+                            <constraint firstItem="jsE-so-dL3" firstAttribute="top" secondItem="5U4-gv-noL" secondAttribute="bottom" constant="4" id="jmj-qn-lQs"/>
                             <constraint firstItem="RLu-fT-Jcu" firstAttribute="leading" secondItem="O4a-9k-vMN" secondAttribute="leadingMargin" id="khF-eH-qFe"/>
                             <constraint firstItem="OZq-Dq-8i2" firstAttribute="width" secondItem="1Q4-76-nRT" secondAttribute="height" multiplier="265:667" id="knH-uv-18W"/>
                             <constraint firstItem="aoA-jt-ltl" firstAttribute="width" secondItem="zvL-Az-ygO" secondAttribute="height" multiplier="219:50" id="pCt-dY-N89"/>
@@ -1755,10 +1794,17 @@ cope at all</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-4w-NR2">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fi6-4w-NR2" secondAttribute="height" multiplier="8:7" id="sHr-D1-wp5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0fe-vC-pAW" firstAttribute="leading" secondItem="Azc-eL-zTf" secondAttribute="leadingMargin" id="0op-gV-0w3"/>
+                            <constraint firstItem="Fi6-4w-NR2" firstAttribute="width" secondItem="q2O-qF-Owb" secondAttribute="height" multiplier="40:667" id="1Jf-nk-WFF"/>
                             <constraint firstItem="Fsv-21-Y8n" firstAttribute="centerX" secondItem="Azc-eL-zTf" secondAttribute="centerX" id="1OS-or-6zx"/>
                             <constraint firstItem="lxg-zb-w4O" firstAttribute="width" secondItem="q2O-qF-Owb" secondAttribute="height" multiplier="265:667" id="4SY-LP-waD"/>
                             <constraint firstItem="5I3-vH-c89" firstAttribute="centerY" secondItem="d4R-e1-zXc" secondAttribute="centerY" id="6on-hf-JPH"/>
@@ -1770,8 +1816,10 @@ cope at all</string>
                             <constraint firstItem="q2O-qF-Owb" firstAttribute="leading" secondItem="Azc-eL-zTf" secondAttribute="leadingMargin" constant="-20" id="NQN-Zp-DTA"/>
                             <constraint firstItem="kxg-GK-wD9" firstAttribute="top" secondItem="q2O-qF-Owb" secondAttribute="bottom" id="RDZ-nh-J7f"/>
                             <constraint firstItem="GNh-ZR-fqc" firstAttribute="top" secondItem="lxg-zb-w4O" secondAttribute="bottom" constant="15" id="RRq-Ro-zbr"/>
+                            <constraint firstItem="Fi6-4w-NR2" firstAttribute="top" secondItem="Ii0-wD-kth" secondAttribute="bottom" constant="4" id="S30-sy-mYA"/>
                             <constraint firstItem="5I3-vH-c89" firstAttribute="width" secondItem="d4R-e1-zXc" secondAttribute="height" multiplier="219:50" id="Teh-Mh-QOG"/>
                             <constraint firstItem="SNL-Dr-t3R" firstAttribute="centerX" secondItem="GNh-ZR-fqc" secondAttribute="centerX" id="Txs-fU-C1d"/>
+                            <constraint firstItem="Fi6-4w-NR2" firstAttribute="centerX" secondItem="Azc-eL-zTf" secondAttribute="centerX" id="Y6s-OL-XHD"/>
                             <constraint firstItem="d4R-e1-zXc" firstAttribute="top" secondItem="4oC-GS-8PZ" secondAttribute="bottom" constant="8" id="ZLc-K4-acT"/>
                             <constraint firstItem="0fe-vC-pAW" firstAttribute="top" secondItem="Ii0-wD-kth" secondAttribute="bottom" constant="8" id="aka-3a-fab"/>
                             <constraint firstItem="un6-4Y-A1I" firstAttribute="centerX" secondItem="Fsv-21-Y8n" secondAttribute="centerX" id="ar7-Nd-qRj"/>
@@ -1915,9 +1963,13 @@ cope at all</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-VU-Dhl">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Dqj-VU-Dhl" firstAttribute="centerX" secondItem="X4M-oJ-iIA" secondAttribute="centerX" id="0Id-Ah-bY0"/>
                             <constraint firstItem="1wo-U8-TUZ" firstAttribute="leading" secondItem="X4M-oJ-iIA" secondAttribute="leadingMargin" constant="-20" id="0Jd-b7-BKh"/>
                             <constraint firstItem="u86-Rb-bBR" firstAttribute="leading" secondItem="DcG-hd-8jl" secondAttribute="trailing" constant="25" id="3Jc-Kt-vcu"/>
                             <constraint firstItem="ofx-ST-XLU" firstAttribute="centerX" secondItem="X4M-oJ-iIA" secondAttribute="centerX" id="3zV-BJ-KRy"/>
@@ -1930,8 +1982,10 @@ cope at all</string>
                             <constraint firstItem="fYD-Ey-5rO" firstAttribute="centerX" secondItem="X4M-oJ-iIA" secondAttribute="centerX" id="IA6-p6-iNX"/>
                             <constraint firstItem="ofx-ST-XLU" firstAttribute="top" secondItem="UDZ-cr-ZHU" secondAttribute="bottom" constant="8" id="KQ1-yb-23J"/>
                             <constraint firstItem="fYD-Ey-5rO" firstAttribute="top" secondItem="ofx-ST-XLU" secondAttribute="bottom" constant="8" id="LWg-CQ-IUm"/>
+                            <constraint firstItem="Dqj-VU-Dhl" firstAttribute="top" secondItem="AIl-Y9-Cmo" secondAttribute="bottom" constant="4" id="Lmx-sD-5XI"/>
                             <constraint firstItem="bmq-lT-n98" firstAttribute="centerX" secondItem="UDZ-cr-ZHU" secondAttribute="centerX" id="O0z-rS-ibB"/>
                             <constraint firstItem="vHK-5b-6EZ" firstAttribute="centerY" secondItem="ofx-ST-XLU" secondAttribute="centerY" id="Ott-R0-kcw"/>
+                            <constraint firstItem="Dqj-VU-Dhl" firstAttribute="width" secondItem="1wo-U8-TUZ" secondAttribute="height" multiplier="40:667" id="PQY-iX-UOO"/>
                             <constraint firstItem="KMN-W5-49d" firstAttribute="width" secondItem="fYD-Ey-5rO" secondAttribute="height" multiplier="219:50" id="QVf-3n-He7"/>
                             <constraint firstItem="oe8-Tl-2VD" firstAttribute="centerY" secondItem="gwe-SP-Huz" secondAttribute="centerY" id="TZG-Kb-fJ6"/>
                             <constraint firstItem="oe8-Tl-2VD" firstAttribute="width" secondItem="gwe-SP-Huz" secondAttribute="height" multiplier="219:50" id="Tn4-FN-BCp"/>
@@ -1947,6 +2001,7 @@ cope at all</string>
                             <constraint firstItem="bmq-lT-n98" firstAttribute="centerY" secondItem="UDZ-cr-ZHU" secondAttribute="centerY" id="dB0-WR-dvD"/>
                             <constraint firstItem="vHK-5b-6EZ" firstAttribute="centerX" secondItem="ofx-ST-XLU" secondAttribute="centerX" id="eSk-Z4-Xsd"/>
                             <constraint firstItem="UDZ-cr-ZHU" firstAttribute="width" secondItem="1wo-U8-TUZ" secondAttribute="height" multiplier="265:667" id="jlf-Iv-FVB"/>
+                            <constraint firstItem="Dqj-VU-Dhl" firstAttribute="width" secondItem="Dqj-VU-Dhl" secondAttribute="height" multiplier="8:7" id="keR-Xd-yW8"/>
                             <constraint firstItem="KMN-W5-49d" firstAttribute="centerX" secondItem="fYD-Ey-5rO" secondAttribute="centerX" id="mbN-Sh-74t"/>
                             <constraint firstItem="DcG-hd-8jl" firstAttribute="width" secondItem="1wo-U8-TUZ" secondAttribute="height" multiplier="14:667" id="oPd-Hf-ZQ6"/>
                             <constraint firstItem="oe8-Tl-2VD" firstAttribute="centerX" secondItem="gwe-SP-Huz" secondAttribute="centerX" id="sWd-Nl-PHd"/>
@@ -2075,6 +2130,12 @@ cope at all</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-tU-Il6">
+                                <rect key="frame" x="167" y="24" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OfG-tU-Il6" secondAttribute="height" multiplier="8:7" id="tz9-0j-Tgp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2085,6 +2146,7 @@ cope at all</string>
                             <constraint firstItem="KWF-Lj-xaR" firstAttribute="width" secondItem="LS2-Wg-dDr" secondAttribute="height" multiplier="265:667" id="89O-f8-ela"/>
                             <constraint firstItem="LS2-Wg-dDr" firstAttribute="top" secondItem="9S4-5A-zEX" secondAttribute="topMargin" id="8w2-oX-dKw"/>
                             <constraint firstItem="LS2-Wg-dDr" firstAttribute="leading" secondItem="9S4-5A-zEX" secondAttribute="leadingMargin" constant="-20" id="9LS-qY-FZN"/>
+                            <constraint firstItem="OfG-tU-Il6" firstAttribute="width" secondItem="LS2-Wg-dDr" secondAttribute="height" multiplier="40:667" id="AmP-dc-Zt9"/>
                             <constraint firstItem="KWF-Lj-xaR" firstAttribute="top" secondItem="8fW-iA-OTC" secondAttribute="bottom" constant="8" id="Azj-n5-Mdi"/>
                             <constraint firstItem="pKP-7m-fb7" firstAttribute="width" secondItem="LS2-Wg-dDr" secondAttribute="height" multiplier="265:667" id="BY3-aN-npM"/>
                             <constraint firstItem="gOp-f4-qvo" firstAttribute="centerX" secondItem="pKP-7m-fb7" secondAttribute="centerX" id="DLZ-C9-rPj"/>
@@ -2098,6 +2160,8 @@ cope at all</string>
                             <constraint firstItem="OMT-b4-OG3" firstAttribute="top" secondItem="LS2-Wg-dDr" secondAttribute="bottom" id="P5E-Sl-n3T"/>
                             <constraint firstItem="cRT-Hq-zO6" firstAttribute="width" secondItem="8fW-iA-OTC" secondAttribute="height" multiplier="219:50" id="Pfc-9x-bpL"/>
                             <constraint firstItem="xjJ-ki-mbn" firstAttribute="centerY" secondItem="KWF-Lj-xaR" secondAttribute="centerY" id="Rqo-Ju-QsZ"/>
+                            <constraint firstItem="OfG-tU-Il6" firstAttribute="centerX" secondItem="9S4-5A-zEX" secondAttribute="centerX" id="TCG-gW-YzF"/>
+                            <constraint firstItem="OfG-tU-Il6" firstAttribute="top" secondItem="BOh-bu-7ph" secondAttribute="bottom" constant="4" id="UrH-W9-Pyp"/>
                             <constraint firstItem="cRT-Hq-zO6" firstAttribute="centerX" secondItem="8fW-iA-OTC" secondAttribute="centerX" id="bk3-RJ-1Zz"/>
                             <constraint firstItem="8fW-iA-OTC" firstAttribute="top" secondItem="pKP-7m-fb7" secondAttribute="bottom" constant="8" id="cpd-pV-h16"/>
                             <constraint firstItem="CjF-vj-lgf" firstAttribute="centerY" secondItem="McR-sF-Rzk" secondAttribute="centerY" id="fY8-aA-tvx"/>
