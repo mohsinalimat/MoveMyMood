@@ -46,21 +46,12 @@ class SelectAEndTimeVC: UIViewController, IQDropDownTextFieldDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     
     // MARK: - IQDropDownTextFieldDelegate Methods
     func textField(_ textField: IQDropDownTextField, didSelect date: Date?) {
         endDate = date
-        print(date)
+        print(date!)
     }
     
     func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {

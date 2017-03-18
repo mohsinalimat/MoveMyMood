@@ -163,7 +163,7 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.tblCategory.reloadSections(IndexSet(integer: indexPath.section), with: UITableViewRowAnimation.fade)
             } else {
                 //Value Selected
-                print(currentCell?.lblCategoryTitle.text)
+                print(currentCell?.lblCategoryTitle.text as Any)
                 
                 let next = self.storyboard?.instantiateViewController(withIdentifier: "RateActivitiesVC") as! RateActivitiesVC!
                 self.navigationController?.pushViewController(next!, animated: true)

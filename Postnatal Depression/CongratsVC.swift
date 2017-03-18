@@ -26,27 +26,11 @@ class CongratsVC: UIViewController {
     }
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
     @IBAction func actionBackButton(_ sender: AnyObject) {
         self.navigationController!.popViewController(animated: true)
     }
     
     @IBAction func actionDoneButton(_ sender: AnyObject) {
-        
-        //let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CongratsVC") as? CongratsVC
-        //self.navigationController?.pushViewController(vc!, animated: true)
-        
-        //"it's almost time for some self care"
-        //"checkin to shedule another activities"
         
         let notification = UILocalNotification()
         notification.fireDate = Date(timeIntervalSinceNow: 10)

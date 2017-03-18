@@ -56,7 +56,7 @@ class SomewhatLikelyVC: UIViewController, IQDropDownTextFieldDelegate {
     // MARK: - IQDropDownTextFieldDelegate Methods
     func textField(_ textField: IQDropDownTextField, didSelect date: Date?) {
         startDate = date
-        print(date)
+        print(date as Any)
     }
     
     func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {

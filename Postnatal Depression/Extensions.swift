@@ -60,7 +60,7 @@ extension UIView {
     }
     public func setCornerRadious(_ radious:CGFloat = 4)
     {
-        self.layer.cornerRadius = radious ?? 4
+        self.layer.cornerRadius = radious 
         self.layer.masksToBounds = true
         self.clipsToBounds = true
     }

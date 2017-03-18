@@ -89,8 +89,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         // Do something serious in a real app.
         print("Received Local Notification:")
-        print(notification.alertBody)
-        print(notification.userInfo)
+        print(notification.alertBody as Any)
+        print(notification.userInfo as Any)
         
         
         if ( application.applicationState == .active )
