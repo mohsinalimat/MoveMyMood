@@ -2,7 +2,7 @@
 //  ActivityLandingVC.swift
 //  Postnatal Depression
 //
-//  Created by iParth on 12/22/16.
+//  Created by Dustin Allen on 12/22/16.
 //  Copyright © 2016 Harloch. All rights reserved.
 //
 

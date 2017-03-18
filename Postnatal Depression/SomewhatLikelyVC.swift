@@ -2,7 +2,7 @@
 //  SomewhatLikelyVC.swift
 //  Postnatal Depression
 //
-//  Created by iParth on 1/4/17.
+//  Created by Dustin Allen on 1/4/17.
 //  Copyright © 2017 Harloch. All rights reserved.
 //
 

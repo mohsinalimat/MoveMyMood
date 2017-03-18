@@ -2,7 +2,7 @@
 //  RateListTableViewCell.swift
 //  Postnatal Depression
 //
-//  Created by iParth on 1/3/17.
+//  Created by Dustin Allen on 1/3/17.
 //  Copyright © 2017 Harloch. All rights reserved.
 //
 
