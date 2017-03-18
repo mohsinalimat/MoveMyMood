@@ -10,20 +10,16 @@ let alertDurationsInMinute:[Int] = [15, 30, 45, 60]
 let Barriers:[String] = ["Not enough time", "It seems hard", "Too tired"]
 let BarriersSolution:[String] = ["Start Small even 5 minutes can help.", "Try activity of your interest", "Another dummy solution"]
 
-var startDate:NSDate?
+var startDate:Date?
 var alertBeforeStartDate:String?
-var endDate:NSDate?
+var endDate:Date?
 var alertBeforeEndDate:String?
 
 
 
 // // MARK: - Methods
 
-func delay(delay:Double, closure:()->()) {
-    dispatch_after(
-        dispatch_time(
-            DISPATCH_TIME_NOW,
-            Int64(delay * Double(NSEC_PER_SEC))
-        ),
-        dispatch_get_main_queue(), closure)
+func delay(_ delay:Double, closure:@escaping ()->()) {
+    DispatchQueue.main.asyncAfter(
+        deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
 }

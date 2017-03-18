@@ -36,11 +36,11 @@ class CongratsVC: UIViewController {
      }
      */
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func actionDoneButton(sender: AnyObject) {
+    @IBAction func actionDoneButton(_ sender: AnyObject) {
         
         //let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CongratsVC") as? CongratsVC
         //self.navigationController?.pushViewController(vc!, animated: true)
@@ -49,16 +49,16 @@ class CongratsVC: UIViewController {
         //"checkin to shedule another activities"
         
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        notification.fireDate = Date(timeIntervalSinceNow: 10)
         //notification.fireDate = startDate t
         notification.alertBody = "it's almost time for some self care"
         notification.alertAction = "StartActivity"
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.userInfo = ["RemiderType": "StartActivity", "UUID": "reminderID"]
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        UIApplication.shared.scheduleLocalNotification(notification)
         
         let endANotification = UILocalNotification()
-        endANotification.fireDate = NSDate(timeIntervalSinceNow: 20)
+        endANotification.fireDate = Date(timeIntervalSinceNow: 20)
         //endANotification.fireDate = endDate
         endANotification.alertBody = "checkin to shedule another activities"
         endANotification.alertAction = "EndActivity"
@@ -67,17 +67,17 @@ class CongratsVC: UIViewController {
         //UIApplication.sharedApplication().scheduleLocalNotification(endANotification)
         
         
-        guard let settings = UIApplication.sharedApplication().currentUserNotificationSettings() else { return }
+        guard let settings = UIApplication.shared.currentUserNotificationSettings else { return }
         
-        if settings.types == .None {
-            let ac = UIAlertController(title: "Can't schedule", message: "Either we don't have permission to schedule notifications, or we haven't asked yet.", preferredStyle: .Alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            presentViewController(ac, animated: true, completion: nil)
+        if settings.types == UIUserNotificationType() {
+            let ac = UIAlertController(title: "Can't schedule", message: "Either we don't have permission to schedule notifications, or we haven't asked yet.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(ac, animated: true, completion: nil)
             return
         }
         
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
     
 }

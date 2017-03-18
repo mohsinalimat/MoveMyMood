@@ -26,7 +26,7 @@ class SelectAEndTimeVC: UIViewController, IQDropDownTextFieldDelegate {
         txtEndDate?.setLeftMargin(8)
         txtEndDate?.setCornerRadious(4)
         txtEndDate?.isOptionalDropDown = false
-        txtEndDate?.dropDownMode = IQDropDownMode.DateTimePicker
+        txtEndDate?.dropDownMode = IQDropDownMode.dateTimePicker
         txtEndDate?.setDate(startDate?.addMinutes(30), animated: true)
         txtEndDate?.minimumDate = startDate?.addMinutes(30)
         endDate = startDate?.addMinutes(30)
@@ -58,23 +58,23 @@ class SelectAEndTimeVC: UIViewController, IQDropDownTextFieldDelegate {
     
     
     // MARK: - IQDropDownTextFieldDelegate Methods
-    func textField(textField: IQDropDownTextField, didSelectDate date: NSDate?) {
+    func textField(_ textField: IQDropDownTextField, didSelect date: Date?) {
         endDate = date
         print(date)
     }
     
-    func textField(textField: IQDropDownTextField, didSelectItem item: String?) {
+    func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {
         alertBeforeEndDate = item
     }
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func actionNextButton(sender: AnyObject) {
+    @IBAction func actionNextButton(_ sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CongratsVC") as? CongratsVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CongratsVC") as? CongratsVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

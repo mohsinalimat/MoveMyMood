@@ -21,7 +21,7 @@ class AlertTitleOnlyVC: UIViewController {
     var Button1Name:String?
     var Button2name:String?
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, alertTitle:String?, Button1Name:String?, Button2name:String?)   {
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, alertTitle:String?, Button1Name:String?, Button2name:String?)   {
         //print("1 Custom init nibName nibNameOrNil")
         super.init(nibName: nil, bundle: nil)
         //print("2 Custom init nibName nibNameOrNil")
@@ -61,11 +61,11 @@ class AlertTitleOnlyVC: UIViewController {
     }
     */
 
-    @IBAction func actionBtn1Tapped(sender: AnyObject) {
+    @IBAction func actionBtn1Tapped(_ sender: AnyObject) {
         self.actionBtn1Tapped?()
     }
     
-    @IBAction func actionBtn2Tapped(sender: AnyObject) {
+    @IBAction func actionBtn2Tapped(_ sender: AnyObject) {
         self.actionBtn2Tapped?()
     }
     

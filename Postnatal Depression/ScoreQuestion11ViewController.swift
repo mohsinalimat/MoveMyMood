@@ -20,7 +20,7 @@ class ScoreQuestion11ViewController: UIViewController {
 
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         localResults = firstScore + secondScore + thirdScore + fourthScore + fifthScore + sixthScore + seventhScore + eighthScore + ninthScore
         print("Current Total: \(localResults)")
     }
@@ -30,63 +30,63 @@ class ScoreQuestion11ViewController: UIViewController {
         
     }
     
-    @IBAction func often(sender: AnyObject) {
+    @IBAction func often(_ sender: AnyObject) {
         tenthScore = 3
         totalScore = tenthScore + localResults
         if totalScore < 9 {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are not experiencing all the symptoms of depression. If you would like extra help improving your mood, go ahead!", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         } else {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are experiencing some symptoms of depression. This app can help you improve your mood.", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         }
     }
 
-    @IBAction func sometimes(sender: AnyObject) {
+    @IBAction func sometimes(_ sender: AnyObject) {
         tenthScore = 2
         totalScore = tenthScore + localResults
         if totalScore < 9 {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are not experiencing all the symptoms of depression. If you would like extra help improving your mood, go ahead!", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         } else {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are experiencing some symptoms of depression. This app can help you improve your mood.", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         }
     }
 
-    @IBAction func hardly(sender: AnyObject) {
+    @IBAction func hardly(_ sender: AnyObject) {
         tenthScore = 1
         totalScore = tenthScore + localResults
         if totalScore < 9 {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are not experiencing all the symptoms of depression. If you would like extra help improving your mood, go ahead!", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         } else {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are experiencing some symptoms of depression. This app can help you improve your mood.", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         }
     }
     
-    @IBAction func never(sender: AnyObject) {
+    @IBAction func never(_ sender: AnyObject) {
         tenthScore = 0
         totalScore = tenthScore + localResults
         if totalScore < 9 {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are not experiencing all the symptoms of depression. If you would like extra help improving your mood, go ahead!", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         } else {
             JSSAlertView().info(self, title: "Your Score is \(totalScore)", text: "This indicates that you are experiencing some symptoms of depression. This app can help you improve your mood.", buttonText: "Next Step")
-            let next = self.storyboard?.instantiateViewControllerWithIdentifier("ReminderViewController") as! ReminderViewController!
-            self.navigationController?.pushViewController(next, animated: true)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ReminderViewController") as! ReminderViewController!
+            self.navigationController?.pushViewController(next!, animated: true)
         }
     }
     
-    @IBAction func backButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func backButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
 }

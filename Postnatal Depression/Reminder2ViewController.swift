@@ -14,7 +14,7 @@ class Reminder2ViewController: UIViewController {
         super.viewDidLoad()
 
         let recognizer1: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(Reminder1ViewController.swipeRight(_:)))
-        recognizer1.direction = .Right
+        recognizer1.direction = .right
         self.view.addGestureRecognizer(recognizer1)
     }
 
@@ -23,15 +23,15 @@ class Reminder2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func getStartedButton(sender: AnyObject) {
+    @IBAction func getStartedButton(_ sender: AnyObject) {
         //let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
         //self.navigationController?.pushViewController(next, animated: true)
         
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
     
-    func swipeRight(recognizer : UISwipeGestureRecognizer) {
-        self.navigationController!.popViewControllerAnimated(true)
+    func swipeRight(_ recognizer : UISwipeGestureRecognizer) {
+        self.navigationController!.popViewController(animated: true)
     }
 }

@@ -37,7 +37,7 @@ class RateAlertViewVC: UIViewController {
     }
     */
 
-    @IBAction func actionSubmitRatingButton(sender: AnyObject)
+    @IBAction func actionSubmitRatingButton(_ sender: AnyObject)
     {
         self.submitAction?()
     }

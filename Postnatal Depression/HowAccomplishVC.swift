@@ -45,26 +45,26 @@ class HowAccomplishVC: UIViewController {
     }
     */
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func actionUnlikely(sender: AnyObject) {
+    @IBAction func actionUnlikely(_ sender: AnyObject) {
         //For test Going to How likely to accomplish screen
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("AccomplishUnlikelyVC") as? AccomplishUnlikelyVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AccomplishUnlikelyVC") as? AccomplishUnlikelyVC
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
-    @IBAction func actionSomeWhatLikely(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SomewhatLikelyVC") as? SomewhatLikelyVC
+    @IBAction func actionSomeWhatLikely(_ sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SomewhatLikelyVC") as? SomewhatLikelyVC
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
-    @IBAction func actionEasyiHaveGotThis(sender: AnyObject) {
+    @IBAction func actionEasyiHaveGotThis(_ sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
         //For test Going to How likely to accomplish screen
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SelectAStartTimeVC") as? SelectAStartTimeVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SelectAStartTimeVC") as? SelectAStartTimeVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

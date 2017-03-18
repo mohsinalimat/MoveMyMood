@@ -25,11 +25,11 @@ class SelectAStartTimeVC: UIViewController, IQDropDownTextFieldDelegate {
         
         txtStartDate?.setLeftMargin(8)
         txtStartDate?.setCornerRadious(4)
-        txtStartDate?.minimumDate = NSDate()
+        txtStartDate?.minimumDate = Date()
         txtStartDate?.isOptionalDropDown = false
-        txtStartDate?.dropDownMode = IQDropDownMode.DateTimePicker
-        txtStartDate?.setDate(NSDate().addHours(2), animated: true)
-        startDate = NSDate().addHours(2)
+        txtStartDate?.dropDownMode = IQDropDownMode.dateTimePicker
+        txtStartDate?.setDate(Date().addHours(2), animated: true)
+        startDate = Date().addHours(2)
         
         txtalertBeforeStartDate?.setLeftMargin(8)
         txtalertBeforeStartDate?.setCornerRadious(4)
@@ -56,23 +56,23 @@ class SelectAStartTimeVC: UIViewController, IQDropDownTextFieldDelegate {
     */
 
     // MARK: - IQDropDownTextFieldDelegate Methods
-    func textField(textField: IQDropDownTextField, didSelectDate date: NSDate?) {
+    func textField(_ textField: IQDropDownTextField, didSelect date: Date?) {
         startDate = date
         print(date)
     }
     
-    func textField(textField: IQDropDownTextField, didSelectItem item: String?) {
+    func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {
         alertBeforeStartDate = item
     }
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func actionNextButton(sender: AnyObject) {
+    @IBAction func actionNextButton(_ sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SelectAEndTimeVC") as? SelectAEndTimeVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SelectAEndTimeVC") as? SelectAEndTimeVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

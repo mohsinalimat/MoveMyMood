@@ -21,8 +21,8 @@ class ReminderNextViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func nextButton(sender: AnyObject) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainCategoryVC") as! MainCategoryVC!
-        self.navigationController?.pushViewController(next, animated: true)
+    @IBAction func nextButton(_ sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "MainCategoryVC") as! MainCategoryVC!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
 }

@@ -23,31 +23,31 @@ class ScoreQuestion6ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func yesQuite(sender: AnyObject) {
+    @IBAction func yesQuite(_ sender: AnyObject) {
         fifthScore = 3
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
 
-    @IBAction func sometimes(sender: AnyObject) {
+    @IBAction func sometimes(_ sender: AnyObject) {
         fifthScore = 2
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
 
-    @IBAction func notMuch(sender: AnyObject) {
+    @IBAction func notMuch(_ sender: AnyObject) {
         fifthScore = 1
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
     
-    @IBAction func notAt(sender: AnyObject) {
+    @IBAction func notAt(_ sender: AnyObject) {
         fifthScore = 0
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ScoreQuestion7ViewController") as! ScoreQuestion7ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
     
-    @IBAction func backButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func backButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
 }

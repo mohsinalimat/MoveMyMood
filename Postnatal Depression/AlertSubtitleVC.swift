@@ -24,7 +24,7 @@ class AlertSubtitleVC: UIViewController {
     var Button1Name:String?
     var Button2name:String?
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, alertTitle:String?, alertSubTitle:String?, Button1Name:String?, Button2name:String?)   {
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, alertTitle:String?, alertSubTitle:String?, Button1Name:String?, Button2name:String?)   {
         //print("1 Custom init nibName nibNameOrNil")
         super.init(nibName: nil, bundle: nil)
         //print("2 Custom init nibName nibNameOrNil")
@@ -67,8 +67,8 @@ class AlertSubtitleVC: UIViewController {
         
         lblTitle.text = alertTitle
         lblSubTitle.text = alertSubTitle
-        btnAlert1.setTitle(Button1Name ?? "", forState: .Normal)
-        btnAlert2.setTitle(Button2name ?? "", forState: .Normal)
+        btnAlert1.setTitle(Button1Name ?? "", for: UIControlState())
+        btnAlert2.setTitle(Button2name ?? "", for: UIControlState())
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,11 +86,11 @@ class AlertSubtitleVC: UIViewController {
      }
      */
     
-    @IBAction func actionBtn1Tapped(sender: AnyObject) {
+    @IBAction func actionBtn1Tapped(_ sender: AnyObject) {
         self.actionBtn1Tapped?()
     }
     
-    @IBAction func actionBtn2Tapped(sender: AnyObject) {
+    @IBAction func actionBtn2Tapped(_ sender: AnyObject) {
         self.actionBtn2Tapped?()
     }
 }

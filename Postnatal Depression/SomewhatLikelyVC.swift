@@ -54,34 +54,34 @@ class SomewhatLikelyVC: UIViewController, IQDropDownTextFieldDelegate {
      */
     
     // MARK: - IQDropDownTextFieldDelegate Methods
-    func textField(textField: IQDropDownTextField, didSelectDate date: NSDate?) {
+    func textField(_ textField: IQDropDownTextField, didSelect date: Date?) {
         startDate = date
         print(date)
     }
     
-    func textField(textField: IQDropDownTextField, didSelectItem item: String?) {
+    func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {
         alertBeforeStartDate = item
     }
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func actionEasierActivityButton(sender: AnyObject) {
+    @IBAction func actionEasierActivityButton(_ sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as? ListActivityRatesVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListActivityRatesVC") as? ListActivityRatesVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
     
-    @IBAction func actionNextButton(sender: AnyObject) {
+    @IBAction func actionNextButton(_ sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
         //let vc = self.storyboard?.instantiateViewControllerWithIdentifier("") as?
         //self.navigationController?.pushViewController(vc!, animated: true)
         
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("HowAccomplishVC") as? HowAccomplishVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HowAccomplishVC") as? HowAccomplishVC
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     

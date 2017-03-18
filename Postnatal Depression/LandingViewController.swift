@@ -14,7 +14,7 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
 
         let recognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(LandingViewController.swipeLeft(_:)))
-        recognizer.direction = .Left
+        recognizer.direction = .left
         self.view.addGestureRecognizer(recognizer)
     }
 
@@ -23,9 +23,9 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func swipeLeft(recognizer : UISwipeGestureRecognizer) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("Reminder1ViewController") as! Reminder1ViewController!
-        self.navigationController?.pushViewController(next, animated: true)
+    func swipeLeft(_ recognizer : UISwipeGestureRecognizer) {
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "Reminder1ViewController") as! Reminder1ViewController!
+        self.navigationController?.pushViewController(next!, animated: true)
     }
 
 }

@@ -24,7 +24,7 @@ class RateActivitiesVC: UIViewController {
         btnNext.layer.cornerRadius = (btnNext.frame.height/2)
         btnNext.layer.masksToBounds = true
         
-        tblRates.scrollEnabled = false
+        tblRates.isScrollEnabled = false
         
         if itemChosen == "At home" {
             theCategory = homeItems
@@ -56,28 +56,28 @@ class RateActivitiesVC: UIViewController {
     }
     */
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func actionNextButton(sender: AnyObject) {
+    @IBAction func actionNextButton(_ sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
         //For test Going to How likely to accomplish screen
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as? ListActivityRatesVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListActivityRatesVC") as? ListActivityRatesVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return theCategory.count
         //return 15
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         
         //Main Category
-        let cell:RateTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateTableViewCell") as! RateTableViewCell
+        let cell:RateTableViewCell = self.tblRates.dequeueReusableCell(withIdentifier: "RateTableViewCell") as! RateTableViewCell
         
         cell.lblCategoryTitle?.text = theCategory[indexPath.row]
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
@@ -86,7 +86,7 @@ class RateActivitiesVC: UIViewController {
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tblRates.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        self.tblRates.deselectRow(at: indexPath, animated: true)
     }
 }

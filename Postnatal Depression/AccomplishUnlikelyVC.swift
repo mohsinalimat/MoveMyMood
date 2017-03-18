@@ -19,7 +19,7 @@ class AccomplishUnlikelyVC: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        tblRates.scrollEnabled = false
+        tblRates.isScrollEnabled = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,19 +38,19 @@ class AccomplishUnlikelyVC: UIViewController {
      }
      */
     
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return theCategory.count
         //return 15
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         
         //Main Category
-        let cell:RateListTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateListTableViewCell") as! RateListTableViewCell
+        let cell:RateListTableViewCell = self.tblRates.dequeueReusableCell(withIdentifier: "RateListTableViewCell") as! RateListTableViewCell
         
         cell.lblCategoryTitle?.text = theCategory[indexPath.row]
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
@@ -59,9 +59,9 @@ class AccomplishUnlikelyVC: UIViewController {
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tblRates.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        self.tblRates.deselectRow(at: indexPath, animated: true)
         
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.popViewController(animated: true)
     }
 }

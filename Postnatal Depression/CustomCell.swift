@@ -9,13 +9,13 @@
 import UIKit
 
 protocol CustomCellDelegate {
-    func dateWasSelected(selectedDateString: String)
+    func dateWasSelected(_ selectedDateString: String)
     
-    func maritalStatusSwitchChangedState(isOn: Bool)
+    func maritalStatusSwitchChangedState(_ isOn: Bool)
     
-    func textfieldTextWasChanged(newText: String, parentCell: CustomCell)
+    func textfieldTextWasChanged(_ newText: String, parentCell: CustomCell)
     
-    func sliderDidChangeValue(newSliderValue: String)
+    func sliderDidChangeValue(_ newSliderValue: String)
 }
 
 class CustomCell: UITableViewCell, UITextFieldDelegate {
@@ -39,9 +39,9 @@ class CustomCell: UITableViewCell, UITextFieldDelegate {
     
     let smallFont = UIFont(name: "Avenir-Light", size: 17.0)
     
-    let primaryColor = UIColor.blackColor()
+    let primaryColor = UIColor.black
     
-    let secondaryColor = UIColor.lightGrayColor()
+    let secondaryColor = UIColor.lightGray
     
     
     // MARK: Variables
@@ -79,7 +79,7 @@ class CustomCell: UITableViewCell, UITextFieldDelegate {
         }
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
@@ -88,24 +88,24 @@ class CustomCell: UITableViewCell, UITextFieldDelegate {
     
     // MARK: IBAction Functions
     
-    @IBAction func setDate(sender: AnyObject) {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
-        let dateString = dateFormatter.stringFromDate(datePicker.date)
+    @IBAction func setDate(_ sender: AnyObject) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.long
+        let dateString = dateFormatter.string(from: datePicker.date)
         
         if delegate != nil {
             delegate.dateWasSelected(dateString)
         }
     }
     
-    @IBAction func handleSwitchStateChange(sender: AnyObject) {
+    @IBAction func handleSwitchStateChange(_ sender: AnyObject) {
         if delegate != nil {
-            delegate.maritalStatusSwitchChangedState(swMaritalStatus.on)
+            delegate.maritalStatusSwitchChangedState(swMaritalStatus.isOn)
         }
     }
     
     
-    @IBAction func handleSliderValueChange(sender: AnyObject) {
+    @IBAction func handleSliderValueChange(_ sender: AnyObject) {
         if delegate != nil {
             delegate.sliderDidChangeValue("\(Int(slExperienceLevel.value))")
         }
@@ -114,7 +114,7 @@ class CustomCell: UITableViewCell, UITextFieldDelegate {
     
     // MARK: UITextFieldDelegate Function
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if delegate != nil {
             delegate.textfieldTextWasChanged(textField.text!, parentCell: self)
         }

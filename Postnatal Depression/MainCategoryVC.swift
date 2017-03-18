@@ -9,7 +9,7 @@
 import UIKit
 
 var categories:Array<String> = ["At home","Outside","With others","Just for me"]
-var items:Dictionary<String,AnyObject> = ["At home":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"],"Outside":["Outside", "Grooming","Health", "Treat", "Exercise"],"With others":["Connect", "Meet with a friend","Romantic fun", "For others"],"Just for me":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]]
+var items:Dictionary<String,Array<Any>> = ["At home":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"],"Outside":["Outside", "Grooming","Health", "Treat", "Exercise"],"With others":["Connect", "Meet with a friend","Romantic fun", "For others"],"Just for me":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]]
 
 var homeItems:Array<String> = ["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]
 var outsideItems:Array<String> = ["Outside", "Grooming","Health", "Treat", "Exercise"]
@@ -59,15 +59,15 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     */
 
-    @IBAction func actionBackButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func actionBackButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return categories.count
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return items.count
         //return 15
         
@@ -83,47 +83,47 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
             //Main Category
-            let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCellWithIdentifier("CategoryTableViewCell") as! CategoryTableViewCell
+            let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCell(withIdentifier: "CategoryTableViewCell") as! CategoryTableViewCell
             
             cell.lblCategoryTitle?.text = categories[indexPath.section]
             
-            cell.imgCategory.backgroundColor = UIColor.grayColor()
+            cell.imgCategory.backgroundColor = UIColor.gray
             cell.imgCategory.layer.cornerRadius = (cell.imgCategory.frame.width/2)
             cell.imgCategory.layer.masksToBounds = true
             
-            cell.imgStatus.hidden = false
-            cell.imgCategory.hidden = false
+            cell.imgStatus.isHidden = false
+            cell.imgCategory.isHidden = false
             
             if selectedSections.contains(indexPath.section) {
-                UIView.animateWithDuration(0.2, animations: {
-                    cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.5));
+                UIView.animate(withDuration: 0.2, animations: {
+                    cell.imgStatus.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2.5));
                 })
             } else {
-                UIView.animateWithDuration(0.2, animations: {
-                    cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
+                UIView.animate(withDuration: 0.2, animations: {
+                    cell.imgStatus.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2.0));
                 })
             }
             
             return cell
         } else {
             //Sub menu
-            let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCellWithIdentifier("CategoryTableViewCell") as! CategoryTableViewCell
+            let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCell(withIdentifier: "CategoryTableViewCell") as! CategoryTableViewCell
             
             let array = items[categories[indexPath.section]] as? Array<String> ?? []
             cell.lblCategoryTitle?.text = "- \(array[indexPath.row-1])"
             
-            cell.imgStatus.hidden = true
-            cell.imgCategory.hidden = true
+            cell.imgStatus.isHidden = true
+            cell.imgCategory.isHidden = true
             
             return cell
         }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        guard  else {
 //            //selection of first cell to expand
 //            
@@ -132,7 +132,7 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         var currentCell:CategoryTableViewCell?
         if let indexPath = tableView.indexPathForSelectedRow {
-            currentCell = tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell
+            currentCell = tableView.cellForRow(at: indexPath) as? CategoryTableViewCell
             print((currentCell?.lblCategoryTitle.text)! as String)
             
             if currentCell?.lblCategoryTitle.text == "At home" {
@@ -154,37 +154,37 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if selectedSections.contains(indexPath.section) {
             if indexPath.row == 0 {
-                UIView.animateWithDuration(0.2, animations: {
-                    currentCell?.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
+                UIView.animate(withDuration: 0.2, animations: {
+                    currentCell?.imgStatus.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2.0));
                 })
                 //Unselect section
-                selectedSections.removeAtIndex(selectedSections.indexOf(indexPath.section) ?? 0)
+                selectedSections.remove(at: selectedSections.index(of: indexPath.section) ?? 0)
                 //self.tblCategory.reloadData()
-                self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+                self.tblCategory.reloadSections(IndexSet(integer: indexPath.section), with: UITableViewRowAnimation.fade)
             } else {
                 //Value Selected
                 print(currentCell?.lblCategoryTitle.text)
                 
-                let next = self.storyboard?.instantiateViewControllerWithIdentifier("RateActivitiesVC") as! RateActivitiesVC!
-                self.navigationController?.pushViewController(next, animated: true)
+                let next = self.storyboard?.instantiateViewController(withIdentifier: "RateActivitiesVC") as! RateActivitiesVC!
+                self.navigationController?.pushViewController(next!, animated: true)
             }
         } else {
             //Expand submenu
-            UIView.animateWithDuration(0.2, animations: {
-                currentCell?.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.5));
+            UIView.animate(withDuration: 0.2, animations: {
+                currentCell?.imgStatus.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2.5));
             })
             
             if selectedSections.count > 0 {
                 //self.tblCategory.reloadSections(NSIndexSet(index: selectedSections!), withRowAnimation: UITableViewRowAnimation.None)
                 selectedSections.append(indexPath.section)
                 //self.tblCategory.reloadData()
-                self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+                self.tblCategory.reloadSections(IndexSet(integer: indexPath.section), with: UITableViewRowAnimation.fade)
                 return
             }
             
             selectedSections.append(indexPath.section)
             //self.tblCategory.reloadData()
-            self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+            self.tblCategory.reloadSections(IndexSet(integer: indexPath.section), with: UITableViewRowAnimation.fade)
         }
     }
     

@@ -21,8 +21,8 @@ class ScoreQuestionsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backButton(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+    @IBAction func backButton(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
 
 }
